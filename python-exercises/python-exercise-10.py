@@ -6,13 +6,13 @@ logging.warning("Missing value encountered")
 
 # Error Handling with try/except:
 try:
-    price = float("19.99")
+    price = float("prueba")
 except ValueError:
     logging.error("Failed to convert price")
 
 # Combine both:
 try:
-    df = pd.read_csv("input.csv")
+    df = pd.read_csv("/home/adminuser/AyscomAcademy/scriptlesson/backup")
 except FileNotFoundError:
     logging.error("File not found")
     exit(1)
